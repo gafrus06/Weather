@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="210.0" style="-fx-background-color: #071121;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weather.Controller.WeatherController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c4761" height="69.0" layoutY="-2.0" stroke="TRANSPARENT" strokeType="INSIDE" width="215.0" />
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="10.0" layoutY="7.0" nodeOrientation="RIGHT_TO_LEFT">
+         <image>
+            <Image url="@free-icon-weather-1599017.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e7e7e7" layoutX="70.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather" wrappingWidth="125.98314094543457">
+         <font>
+            <Font name="Harlow Solid Italic" size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textField" layoutX="20.0" layoutY="77.0" prefHeight="30.0" prefWidth="169.0" promptText="Name city" style="-fx-text-fill: white; -fx-background-color: #071121;">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </TextField>
+      <Text fx:id="temp" fill="WHITE" layoutX="15.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temp:" wrappingWidth="125.98314094543457">
+         <font>
+            <Font name="Impact" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="feel" fill="WHITE" layoutX="15.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feel:" wrappingWidth="125.98314094543457">
+         <font>
+            <Font name="Impact" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="pressure" fill="WHITE" layoutX="15.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressure:" wrappingWidth="125.98314094543457">
+         <font>
+            <Font name="Impact" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="getWeather" fill="#3b5b75" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GET" textAlignment="CENTER" wrappingWidth="210.0">
+         <font>
+            <Font name="Impact" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="clouds" fill="WHITE" layoutX="58.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="93.18302345275879">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
